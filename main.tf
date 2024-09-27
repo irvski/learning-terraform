@@ -101,10 +101,10 @@ module "alb" {
 
     #  forward = {
     #    target_group_key = "ex-instance"
-    port               = 80
-    protocol           = "HTTP"
-    target_group_index = 0
-      }
+    http = {
+      port               = 80
+      protocol           = "HTTP"
+      target_group_index = 0
     }
   }
 
